@@ -1,11 +1,11 @@
 {
-    "name": "my-crawler",
+    "name": "new-crawler",
     "version": "0.0.1",
     "type": "module",
     "description": "This is an example of a Crawlee project.",
     "dependencies": {
-        "crawlee": "^3.0.0",
-        "playwright": "*"
+        "apify": "^3.1.1",
+        "crawlee": "^3.0.0"
     },
     "devDependencies": {
         "@apify/tsconfig": "^0.1.0",
