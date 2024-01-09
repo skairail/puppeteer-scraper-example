@@ -1,11 +1,15 @@
 {
   "extends": "@apify/tsconfig",
   "compilerOptions": {
-    "module": "ES2022",
+    "module": "CommonJS",
     "target": "ES2022",
+    "moduleResolution": "node",
     "outDir": "dist",
+    "lib": ["DOM"],
+    "noImplicitAny": false,
     "noUnusedLocals": false,
-    "lib": ["DOM"]
+    "noUnusedParameters": false,
+    "esModuleInterop": true
   },
   "include": ["./src/**/*"]
 }

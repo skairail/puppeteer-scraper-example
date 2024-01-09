@@ -1,24 +1,26 @@
 {
-    "name": "new-crawler",
-    "version": "0.0.1",
-    "type": "module",
-    "description": "This is an example of a Crawlee project.",
-    "dependencies": {
-        "apify": "^3.1.1",
-        "crawlee": "^3.0.0"
-    },
-    "devDependencies": {
-        "@apify/tsconfig": "^0.1.0",
-        "ts-node": "^10.8.0",
-        "typescript": "^4.7.4"
-    },
-    "scripts": {
-        "start": "npm run start:dev",
-        "start:prod": "node dist/main.js",
-        "start:dev": "ts-node-esm -T src/main.ts",
-        "build": "tsc",
-        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
-    },
-    "author": "It's not you it's me",
-    "license": "ISC"
+  "name": "linkedin-services-scraper",
+  "version": "0.0.1",
+  "dependencies": {
+    "@crawlee/puppeteer": "3.3.0",
+    "@crawlee/browser-pool": "^3.7.2",
+    "apify": "3.1.2",
+    "crawlee": "3.0.0",
+    "puppeteer": "21.3.7"
+  },
+  "devDependencies": {
+    "@apify/tsconfig": "0.1.0",
+    "@types/node": "18.15.0",
+    "prettier": "2.8.5",
+    "ts-node": "10.8.0",
+    "typescript": "4.7.4"
+  },
+  "scripts": {
+    "dev": "apify run",
+    "start": "ts-node-esm -T src/main.ts",
+    "start:prod": "node dist/main.js",
+    "build": "tsc",
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+  },
+  "license": "ISC"
 }
